@@ -83,8 +83,10 @@ img{display:block;max-width:100%}
   background:rgba(13,19,36,.72);
   box-shadow:0 18px 60px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.06);
 }
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:950;font-size:20px;letter-spacing:-.03em}
-.brand img{width:44px;height:44px;border-radius:14px;object-fit:cover;box-shadow:0 16px 36px rgba(55,183,255,.2)}
+.brand{display:flex;align-items:center;gap:16px;text-decoration:none;font-weight:950;font-size:22px;letter-spacing:-.03em}
+.brand img{width:58px;height:58px;border-radius:16px;object-fit:contain;flex-shrink:0;box-shadow:0 18px 40px rgba(55,183,255,.28);transition:transform .25s ease,box-shadow .25s ease}
+
+.brand:hover img{transform:scale(1.06);box-shadow:0 22px 48px rgba(55,183,255,.35)}
 .nav-links{display:flex;align-items:center;justify-content:center;gap:8px}
 .nav-links a,.nav-cta{
   text-decoration:none;
