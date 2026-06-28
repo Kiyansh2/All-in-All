@@ -237,7 +237,14 @@ img{display:block;max-width:100%}
 .product-card:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.28);background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.045)),rgba(16,27,48,.78)}
 .card-kicker{position:absolute;top:22px;left:50%;transform:translateX(-50%);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#dbeafe;font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.1em}
 .card-icon{width:70px;height:70px;border-radius:24px;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid var(--line);font-size:34px;margin-top:32px}
-.shield-icon::before{content:"";width:34px;height:40px;border:3px solid white;border-radius:18px 18px 22px 22px;clip-path:polygon(50% 0%,100% 18%,86% 78%,50% 100%,14% 78%,0% 18%)}
+.extension-icon{background:rgba(255,255,255,.08)}
+.extension-glyph{position:relative;width:40px;height:40px;transition:transform .3s ease}
+.extension-glyph span{position:absolute;width:16px;height:16px;border-radius:7px;background:linear-gradient(135deg,#31c9ff,#7b5cff);box-shadow:0 0 18px rgba(55,183,255,.35),inset 0 1px 1px rgba(255,255,255,.35)}
+.extension-glyph span:nth-child(1){top:0;left:0}
+.extension-glyph span:nth-child(2){top:0;right:0}
+.extension-glyph span:nth-child(3){bottom:0;left:0}
+.extension-glyph span:nth-child(4){bottom:0;right:0}
+.extension-icon:hover .extension-glyph{transform:rotate(8deg) scale(1.06)}
 .money-icon{font-weight:950;color:#d9fffb}
 .product-card h3{font-size:29px;margin:4px 0 0;letter-spacing:-.03em}
 .product-card p{color:var(--muted);font-size:17px;line-height:1.55;margin:0;max-width:270px}
